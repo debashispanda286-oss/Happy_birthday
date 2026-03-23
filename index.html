@@ -23,6 +23,7 @@
         color: white;
         flex-direction: column;
         animation: fadeIn 2s ease-in-out;
+        padding: 20px;
     }
 
     h1 {
@@ -31,8 +32,18 @@
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.4em;
         margin-top: 15px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 20px;
+        object-fit: cover;
+        border: 4px solid white;
+        box-shadow: 0 0 20px rgba(255,255,255,0.7);
     }
 
     @keyframes fadeIn {
@@ -78,10 +89,22 @@
 
 <body>
 
+<!-- 🎵 Background Music -->
+<audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+</audio>
+
 <div class="container">
     <h1>🎂 Happy Birthday! 🎂</h1>
-   <p>So many years, so many memories, and still the same bond.<br>
-Wishing you the happiest birthday 💙</p>
+
+    <!-- 🖼️ Your Image -->
+    <img src="photo.png" alt="Birthday Photo" class="photo">
+
+    <!-- 💬 Your Message -->
+    <p>
+        From childhood memories to today, you’ve always been special to me.<br>
+        Happy Birthday, stay amazing 💙
+    </p>
 </div>
 
 <script>
